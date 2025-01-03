@@ -73,8 +73,11 @@ def attempt_two(inputs, rounds=25):
         2024 -> 20, 24
         20, 24 -> 2, 0, 2, 4
 
-        and so on. we always end up with single digits after multiplying
-        with 2024 until we get a number with even digits
+        5 -> 10120 -> 20482880 -> 2048,2880 -> 20,48,28,80 -> 2,0,4,8,2,8,8,0
+
+        and so on. Any number will eventually transform into a series of single
+        digits - just multiply with 2024 until we get a number that has an even
+        number of digits
     '''
 
     cache = defaultdict(lambda:None)
